@@ -7,6 +7,7 @@ ekjs içerisindeki fonksiyonların bir çoğunu kendi başıma yazmaya çalış�
 
 Sadece ```İST101(İstatistik I)``` dersi aldığım için başlangıçta tüm istatistik formüllerini göremeyeceğiz.
 
+
 ### Yapılacaklar
 - [ ] Yorum satırları
 - [ ] ekjs.istatistik içerisinde belirli istatistik fonksiyonlarının yazılması
