@@ -38,6 +38,36 @@ ek.istatistik = {
         }
         return medyan;
     },
+    mod: (dizi) => {
+        let mod = 0;
+        let modDegeri = 0;
+        let sayac = 0;
+        for (let i = 0; i < dizi.length; i++) {
+            for (let j = 0; j < dizi.length; j++) {
+                if (dizi[i] == dizi[j]) {
+                    sayac++;
+                }
+            }
+            if (sayac > modDegeri) {
+                modDegeri = sayac;
+                mod = dizi[i];
+            }
+            sayac = 0;
+        }
+        return mod;
+    },
+
+    varyans: (dizi) => {
+        let varyans = 0;
+        let ortalama = ek.istatistik.ortalama(dizi);
+        for (let i = 0; i < dizi.length; i++) {
+            varyans += Math.pow(dizi[i] - ortalama, 2);
+        }
+        return varyans / dizi.length;
+    },
+    standartSapma: (dizi) => {
+        return Math.sqrt(ek.istatistik.varyans(dizi));
+    },
 }
 
 ek.init();
