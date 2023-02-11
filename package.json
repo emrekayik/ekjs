@@ -1,4 +1,23 @@
 {
+  "name": "ekjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ek.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx babel ./src/ek.js --watch -o ./dist/ek.js --presets=@babel/preset-env"
+  },
+  "repository": "git+https://github.com/emrekayik/ekjs.git",
+  "author": {
+    "name": "Emre Kayık",
+    "email": "emrekayik1905@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emrekayik/ekjs/issues"
+  },
+  "homepage": "https://github.com/emrekayik/ekjs#readme",
+  "devDependencies": {},
   "dependencies": {
     "@babel/cli": "^7.20.7",
     "@babel/core": "^7.20.12",

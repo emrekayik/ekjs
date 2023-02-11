@@ -16,6 +16,14 @@ ek.init = function() {
 
 
 ek.istatistik = {
+    /* 
+        Ortalama: Dizideki tüm sayıların toplamının eleman sayısına bölünmesiyle elde edilen sayıdır.
+
+        @param dizi: Array
+        @return: Number
+
+        Örnek: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] => 5.5
+    */
     ortalama: (dizi) => {
         let toplam = 0;
         for (let i = 0; i < dizi.length; i++) {
@@ -23,6 +31,14 @@ ek.istatistik = {
         }
         return toplam / dizi.length;
     },
+    /*
+        Medyan: Dizideki sayıların sıralanmasıyla elde edilen dizinin ortadaki sayıya medyan denir.
+
+        @param dizi: Array
+        @return: Number
+
+        Örnek: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] => 5.5
+    */
     medyan: (dizi) => {
         let medyan = 0;
         let diziUzunlugu = dizi.length;
@@ -34,6 +50,14 @@ ek.istatistik = {
         }
         return medyan;
     },
+    /*
+        Mod: Dizide en çok tekrar eden sayıya mod denir.
+
+        @param dizi: Array
+        @return: Number
+
+        Örnek: [1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] => 1
+    */
     mod: (dizi) => {
         let mod = 0;
         let modDegeri = 0;
@@ -52,7 +76,14 @@ ek.istatistik = {
         }
         return mod;
     },
+    /*
+        Varyans: Dizideki sayıların ortalama değerinden farkının karesinin ortalamasıdır.
 
+        @param dizi: Array
+        @return: Number
+
+        Örnek: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] => 8.25
+    */
     varyans: (dizi) => {
         let varyans = 0;
         let ortalama = ek.istatistik.ortalama(dizi);
@@ -61,6 +92,14 @@ ek.istatistik = {
         }
         return varyans / dizi.length;
     },
+    /*
+        Standart Sapma: Varyansın kareköküdür.
+
+        @param dizi: Array
+        @return: Number
+
+        Örnek: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] => 2.8722813232690143
+    */
     standartSapma: (dizi) => {
         return Math.sqrt(ek.istatistik.varyans(dizi));
     },
