@@ -16,10 +16,6 @@ ek.init = function() {
 
 
 ek.istatistik = {
-    init: (elm) => {
-        const elm = document.querySelector(elm);
-        elm.innerHTML
-    },
     ortalama: (dizi) => {
         let toplam = 0;
         for (let i = 0; i < dizi.length; i++) {
@@ -71,4 +67,8 @@ ek.istatistik = {
 }
 
 ek.init();
-//console.log(ek.istatistik.ortalama([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+console.log(ek.istatistik.ortalama([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+console.log(ek.istatistik.medyan([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+console.log(ek.istatistik.mod([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+console.log(ek.istatistik.varyans([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+console.log(ek.istatistik.standartSapma([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
