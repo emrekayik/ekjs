@@ -2,10 +2,13 @@
   "name": "ekjs",
   "version": "1.0.0",
   "description": "",
-  "main": "ek.js",
+  "source": "src/ek.js",
+  "main": "dist/ek.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx babel ./src/ek.js --watch -o ./dist/ek.js --presets=@babel/preset-env"
+    "watch": "parcel watch",
+    "build": "parcel build",
+    "webpack": "webpack --mode production"
   },
   "repository": "git+https://github.com/emrekayik/ekjs.git",
   "author": {
@@ -17,10 +20,12 @@
     "url": "https://github.com/emrekayik/ekjs/issues"
   },
   "homepage": "https://github.com/emrekayik/ekjs#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.12.0",
+    "parcel": "^2.8.3"
+  },
   "dependencies": {
-    "@babel/cli": "^7.20.7",
-    "@babel/core": "^7.20.12",
-    "@babel/preset-env": "^7.20.2"
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   }
 }

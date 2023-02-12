@@ -1,21 +1,4 @@
-// ekjs, istatistik modülüdür. Deneyseldir.
-var ek = {}
-
-ek.init = function() {
-    console.log(`
-        %cekjs.init`,
-    `
-        color: #fff; 
-        background: #000; 
-        padding: 5px 10px; 
-        border-radius: 5px;
-        font-size: 1.6rem;
-        font-family: monospace;`
-    );
-}
-
-
-ek.istatistik = {
+export const istatistik = {
     /* 
         Ortalama: Dizideki tüm sayıların toplamının eleman sayısına bölünmesiyle elde edilen sayıdır.
 
