@@ -1,5 +1,4 @@
 # EKJS
-# !Don't use this.
 
 Class yapısının mı yoksa bu yapının mı daha mantıklı olduğunu henüz bilmiyorum. Class yapısı mantıklı olduğu kanısına varırsam.(ki muhtemelen öyle), ona göre düzenlemeler yapacağım. 
 
@@ -7,6 +6,7 @@ ekjs içerisindeki fonksiyonların bir çoğunu kendi başıma yazmaya çalış�
 
 Sadece ```İST101(İstatistik I)``` dersi aldığım için başlangıçta tüm istatistik formüllerini göremeyeceğiz.
 
+Amacım Türkçe bir İstatistik kütüphanesi oluşturmak.
 
 ### Yapılacaklar
 - [ ] Yorum satırları

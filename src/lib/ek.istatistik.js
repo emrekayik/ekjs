@@ -86,4 +86,34 @@ export const istatistik = {
     standartSapma: (dizi) => {
         return Math.sqrt(ek.istatistik.varyans(dizi));
     },
+    /*
+        Harmonik Ortalama: Dizideki sayıların terslerinin ortalamasının tersidir.
+
+        @param dizi: Array
+        @return: Number
+
+        Örnek: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] => 2.9289682539682538
+    */
+    harmonikOrtalama: (dizi) => {
+        let harmonikOrtalama = 0;
+        for (let i = 0; i < dizi.length; i++) {
+            harmonikOrtalama += 1 / dizi[i];
+        }
+        return dizi.length / harmonikOrtalama;
+    },
+    /*
+        Geometrik Ortalama: Dizideki sayıların çarpımının n'inci köküdür.
+
+        @param dizi: Array
+        @return: Number
+
+        Örnek: [1, 2, 3, 4, 5] => 2.605171084697352
+    */
+    geometrikOrtalama: (dizi) => {
+        let geometrikOrtalama = 1;
+        for (let i = 0; i < dizi.length; i++) {
+            geometrikOrtalama *= dizi[i];
+        }
+        return Math.pow(geometrikOrtalama, 1 / dizi.length);
+    }
 }
